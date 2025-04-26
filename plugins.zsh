@@ -8,4 +8,4 @@ zinit light zsh-users/zsh-autosuggestions
 # cmd auto-cmp
 zinit light marlonrichert/zsh-autocomplete
 # auto venv activator
-zinit light matthiasha/zsh-uv-env                                                                                       ~                                                    
+zinit light matthiasha/zsh-uv-env
