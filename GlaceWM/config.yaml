@@ -121,10 +121,17 @@ window_behavior:
 
 workspaces:
   - name: '1'
+    display_name: "1. Coding"
+    bind_to_monitor: 0
   - name: '2'
+    display_name: "2. Docs/Notes/GPT"	
   - name: '3'
+    display_name: "3. Chats"
   - name: '4'
+    display_name: "4. Fun"
   - name: '5'
+    display_name: "5. Gaming"
+    2bind_to_monitor: 0
   - name: '6'
   - name: '7'
   - name: '8'
@@ -215,11 +222,8 @@ keybindings:
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
   - commands: ['toggle-tiling-direction']
-    bindings: ['alt+v']
-
-  # Change focus from tiling windows -> floating -> fullscreen.
-  - commands: ['wm-cycle-focus']
     bindings: ['alt+space']
+
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']
@@ -231,11 +235,8 @@ keybindings:
 
   # Change the focused window to be fullscreen.
   - commands: ['toggle-fullscreen']
-    bindings: ['alt+g']
-
-  # Minimize focused window.
-  - commands: ['toggle-minimized']
     bindings: ['alt+m']
+
 
   # Close focused window.
   - commands: ['close']
@@ -249,9 +250,6 @@ keybindings:
   - commands: ['wm-reload-config']
     bindings: ['alt+shift+p']
 
-  # Redraw all windows.
-  - commands: ['wm-redraw']
-    bindings: ['alt+shift+w']
 
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
