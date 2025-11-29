@@ -144,7 +144,11 @@ window_rules:
   - commands: ["move --workspace 3"]
     match:
       # Move browsers to workspace .
-      - window_process: { regex: "teams" }
+      - window_process: { regex: 'teams' }
+  - commands: ["move --workspace 7"]
+    match:
+      # Move browsers to workspace .
+      - window_title: { regex: 'WhatsApp|Discord' }
 
 
   - commands: ['ignore']
@@ -205,7 +209,7 @@ keybindings:
   - commands: ['move --direction up']
     bindings: ['shift+alt+k', 'shift+alt+up']
   - commands: ['move --direction down']
-    bindings: ['shift+alt+j', 'shift+alt+down']zz
+    bindings: ['shift+alt+j', 'shift+alt+down']
 
   # Resize focused window by a percentage or pixel amount.
   - commands: ['resize --width -2%']
@@ -232,6 +236,8 @@ keybindings:
   # be inserted.
   - commands: ['toggle-tiling-direction']
     bindings: ['shift+control+space']
+
+
 
 
   # Change the focused window to be fullscreen.
