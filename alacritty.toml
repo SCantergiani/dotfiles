@@ -1,14 +1,17 @@
 #SHELL
+
 [terminal.shell]
 program = "wsl.exe"
 args = ["~"]
 
 #FONT
+
 [font]
 normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
 size = 14
 
 #THEME
+
 [colors.primary]
 background = "#1e1e2e"
 foreground = "#cdd6f4"
